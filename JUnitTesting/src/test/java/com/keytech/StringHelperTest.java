@@ -8,7 +8,12 @@ public class StringHelperTest {
 
 	@Test
 	public void test() {
-		assertEquals("ABC", "ABC");
+		//AACD => CD, ACD => CD, CDEF => CDEF, CDAA => CDAA
+		StringHelper helper = new StringHelper();
+		String actualValue = helper.truncateAInFirstTwoPositions("AACD");
+		String expectedValue = "CD";
+		
+		assertEquals(expectedValue, actualValue);
 		//expected, actual-->this are the arguments above;
 	}
 
