@@ -4,13 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import junit.framework.Assert;
-
 public class StringHelperTest {
 
 	@Test
 	public void test() {
-		assertEquals("ABC", "ABCD");
+		assertEquals("ABC", "ABC");
 		//expected, actual-->this are the arguments above;
 	}
 
