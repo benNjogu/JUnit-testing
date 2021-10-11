@@ -10,10 +10,9 @@ public class StringHelperTest {
 	public void test() {
 		//AACD => CD, ACD => CD, CDEF => CDEF, CDAA => CDAA
 		StringHelper helper = new StringHelper();
-		String actualValue = helper.truncateAInFirstTwoPositions("AACD");
-		String expectedValue = "CD";
+		assertEquals("CD", helper.truncateAInFirstTwoPositions("AACD"));
+		assertEquals("CD", helper.truncateAInFirstTwoPositions("AACD"));
 		
-		assertEquals(expectedValue, actualValue);
 		//expected, actual-->this are the arguments above;
 	}
 
