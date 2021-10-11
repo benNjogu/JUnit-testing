@@ -11,7 +11,7 @@ public class StringHelperTest {
 		//AACD => CD, ACD => CD, CDEF => CDEF, CDAA => CDAA
 		StringHelper helper = new StringHelper();
 		assertEquals("CD", helper.truncateAInFirstTwoPositions("AACD"));
-		assertEquals("CD", helper.truncateAInFirstTwoPositions("AACD"));
+		assertEquals("CD", helper.truncateAInFirstTwoPositions("ACD"));
 		
 		//expected, actual-->this are the arguments above;
 	}
