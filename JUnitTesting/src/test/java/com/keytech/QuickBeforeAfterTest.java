@@ -2,6 +2,7 @@ package com.keytech;
 
 import static org.junit.Assert.*;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -22,7 +23,10 @@ public class QuickBeforeAfterTest {
 		System.out.println("Test 2 executed");
 	}
 	
-	
+	@After
+	public void TearDown() {
+		System.out.println("After test");
+	}
 	
 	
 	
