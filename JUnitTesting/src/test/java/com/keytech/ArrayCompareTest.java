@@ -27,7 +27,7 @@ public class ArrayCompareTest {
 		
 	}
 	
-	@Test(timeout=100)
+	@Test(timeout=10)
 	public void testSort_perfomance() {
 		int[] array = {12,23,4};
 		for (int i = 1; i < 1000000; i++) {
