@@ -3,6 +3,7 @@ package com.keytech;
 import static org.junit.Assert.*;
 
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -32,6 +33,11 @@ public class QuickBeforeAfterTest {
 	@After
 	public void TearDown() {
 		System.out.println("After test");
+	}
+	
+	@AfterClass
+	public static void AfterClass() {
+		System.out.println("after class");
 	}
 
 }
