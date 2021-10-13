@@ -13,7 +13,7 @@ public class ArrayCompareTest {
 	public void testArraySort_randomArray() {
 		
 		int[] numbers = {12,3,4,1};
-		int[] expected = {1,3,4,12};
+		int[] expected = {1,4,4,12};
 		Arrays.sort(numbers);
 		assertArrayEquals(expected, numbers);
 		
