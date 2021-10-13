@@ -19,15 +19,11 @@ public class ArrayCompareTest {
 		
 	}
 	
-	@Test
+	@Test(expected = NullPointerException.class)
 	public void testArraySort_nullArray() {
 		
 		int[] numbers = null;
-		try {
-			Arrays.sort(numbers);
-		} catch (NullPointerException e) {
-			//success
-		}
+		Arrays.sort(numbers);
 		
 	}
 
