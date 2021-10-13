@@ -27,7 +27,8 @@ public class StringHelperParameterizedTest {
 
 	@Parameters
 	public static Collection<String[]> testConditions() {
-		String expectedOutPuts[][] = { { "AACD", "CD" }, { "ACD", "CD" } };
+		String expectedOutPuts[][] = { { "AACD", "CD" }, { "ACD", "CD" },
+										{"CDEF", "CDEF"}, {"CDAA", "CDAA"}};
 		return Arrays.asList(expectedOutPuts);
 	}
 
@@ -44,14 +45,14 @@ public class StringHelperParameterizedTest {
 		assertEquals(expectedOutput, helper.truncateAInFirstTwoPositions(input));
 	}
 
-	// @Test
-	// public void testTruncateAInNoPosition3_NoAinAnyPosition() {
-	// assertEquals("CDEF", helper.truncateAInFirstTwoPositions("CDEF"));
-	// }
-	//
-	// @Test
-	// public void testTruncateAInLastTwoPositions_AinLastTwoPositions() {
-	// assertEquals("CDAA", helper.truncateAInFirstTwoPositions("CDAA"));
-	// }
+	 @Test
+	 public void testTruncateAInNoPosition3_NoAinAnyPosition() {
+	 assertEquals("CDEF", helper.truncateAInFirstTwoPositions("CDEF"));
+	 }
+	
+	 @Test
+	 public void testTruncateAInLastTwoPositions_AinLastTwoPositions() {
+	 assertEquals("CDAA", helper.truncateAInFirstTwoPositions("CDAA"));
+	 }
 
 }
